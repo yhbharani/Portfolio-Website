@@ -1,0 +1,89 @@
+.services-icon-wrap span {
+    display: block;
+    text-align: center;
+    margin: 0 auto; 
+}
+    .services-icon-wrap span.key-fact {
+      font-size: 12px;
+      font-weight: 700;
+      font-family: "Hind", sans-serif;
+      color: #fff;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      margin-top: 24px; }
+
+      .services-icon-wrap span.logo:hover {
+        margin-top: -10px;
+        transition: margin-top .3s linear;
+    }
+  .services-icon-wrap .icon {
+    color: #6f6f71;
+    font-size: 60px;
+    display: inline-block;
+    perspective: 1000px;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s; }
+  .services-icon-wrap .icon-wrap:hover .icon {
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    color: #fff; }
+
+.architect{
+    background-image: url(../../assets/img/sketch.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: block; 
+    width: 50px;
+    height: 50px;
+    opacity: .6;
+    margin-bottom: 10%;
+}
+.motion{
+    background-image: url(../../assets/img/motion.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: block; 
+    width: 50px;
+    height: 50px;
+    opacity: .6;
+    margin-bottom: 10%;
+
+}
+.uiux{
+    background-image: url(../../assets/img/ux.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: block; 
+    width: 50px;
+    height: 50px;
+    opacity: .6;
+    margin-bottom: 10%;
+
+}
+.web{
+    background-image: url(../../assets/img/code.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: block; 
+    width: 50px;
+    height: 50px;
+    opacity: .6;
+    margin-bottom: 10%;
+
+}
+.art{
+    background-image: url(../../assets/img/drawing.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: block; 
+    width: 50px;
+    height: 50px;
+    opacity: .6;
+    margin-bottom: 10%;
+
+}

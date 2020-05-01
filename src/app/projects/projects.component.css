@@ -1,0 +1,159 @@
+/* The Modal (background) */
+.modal {
+    display: block;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+  /* The Buttons */
+  .clos {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+  
+.next{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    
+}
+
+.previous{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    
+}
+
+.bandh {
+    font-size: 30px;
+    align-items: center;
+    color: white;
+    opacity: .5;
+    cursor: pointer;
+  }
+
+
+  mat-icon {
+    font-size: 44px;
+    align-items: center;
+    color: white;
+    opacity: .5;
+    cursor: pointer;
+  }
+
+  mat-icon:hover {
+    opacity: 1;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    height: auto !important;
+    max-height: 100% !important;
+    background-color: #000000;
+    margin: .5% auto; /* 15% from the top and centered */
+    padding: none;
+    border: none;
+    max-width: 1100px !important;
+    width: 80%; /* Could be more or less, depending on screen size */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 1000px) {
+        .modal-content {
+        width: 100%;
+        }
+
+        .next{right:2%;}
+        .previous{left:2%;} 
+        
+        
+    }
+
+  .content {
+    display: block;
+    align-items: flex-start;
+    padding: none;
+    border: none;
+    margin: none;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+  
+  .content-row:last-child {
+    border-bottom: none;
+  }
+  
+  
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+  }
+
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+  }
+
+  .starter{
+      padding: .4%;
+      padding-left:2% ;
+      font-size: 1em;
+      font-weight: 400;
+  }
+
+  .ender{
+    padding: 4%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.date{
+    text-align: center;
+    font-size: .5em;
+    opacity: .5;
+}
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+
+
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE and Edge */
+  .content {
+    -ms-overflow-style: none;
+  }

@@ -1,0 +1,23 @@
+
+    .skills-wrap .progress-cat {
+      font-size: 14px;
+      font-family: "Hind", sans-serif;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: .5px;
+      text-transform: none;
+      display: block;
+      padding-bottom: 10px; 
+    letter-spacing: .1em
+    ;}
+
+      .skill-logo{
+        background-repeat: no-repeat;
+        background-size: 50px;
+        display: block; 
+        width: 50px;
+        height: 50px;
+        opacity: .7;
+        margin-bottom: 10%;
+        margin-left: 15px;
+    }

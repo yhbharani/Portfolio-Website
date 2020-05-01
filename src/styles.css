@@ -1,0 +1,313 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+  transform: none !important;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; 
+    scroll-behavior: smooth;
+  }
+  
+  strong {
+    font-weight: bold; }
+  
+  body {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5;
+    overflow: auto; }
+  
+  a:hover, a:active {
+    outline: 0; }
+  
+  button:focus {
+    border: none;
+    outline: 0; }
+  
+  ul {
+    list-style: none; }
+  
+  a {
+    color: #141414;
+    text-decoration: none; }
+  
+  a:hover {
+    color: #141414;
+    text-decoration: none; }
+  
+  a:focus {
+    color: #141414;
+    text-decoration: none;
+    outline: none; }
+  
+
+  
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: none;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    margin-bottom: 75px;
+     }
+  
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 60px;
+    letter-spacing: -0.5; }
+  
+  h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin-bottom: 15px; }
+  
+  h6 {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #e91e63;
+    margin-bottom: 33px; 
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.2px;
+  }
+  
+  p {
+    font-size: 16px;
+    font-family: "Hind", sans-serif;
+    color: #ccc;
+    word-spacing: .15em; 
+  }
+  
+  .p-small {
+    padding-top: 5px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 18px; }
+  
+  .force-UTF-8 {
+    content: "¡"; }
+  
+  /****************************/
+  /** Main **/
+  /****************************/
+  /********Basic Sec CSS********/
+  .pad-zero {
+    padding: 0; }
+  
+  .pad-left-zero {
+    padding-left: 0; }
+  
+  .pad-right-zero {
+    padding-left: 0; }
+  
+  .sec-pad {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+  
+  .sec-pad-sm {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  
+  .sec-pad-xs {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  
+  .sec-pad-top {
+    padding-top: 80px; }
+  
+  .sec-pad-top-sm {
+    padding-top: 50px; }
+  
+  .sec-pad-top-xs {
+    padding-top: 30px; }
+  
+  .sec-pad-bottom {
+    padding-bottom: 80px; }
+  
+  .sec-pad-bottom-sm {
+    padding-bottom: 50px; }
+  
+  .sec-pad-bottom-xs {
+    padding-bottom: 30px; }
+  
+  .sec-pad-left {
+    padding-left: 150px; }
+  
+  .sec-pad-right {
+    padding-right: 150px; }
+  
+  .pad-top-15 {
+    padding-top: 15px; }
+  
+  .pad-top-7 {
+    padding-top: 7px; }
+  
+  .pad-bottom-80 {
+    padding-bottom: 80px; }
+  
+  .pad-bottom-35 {
+    padding-bottom: 35px; }
+  
+  .margin-top-sm {
+    margin-top: 50px; }
+  
+  .margin-bottom-sm {
+    margin-bottom: 50px; }
+  
+  .margin-bottom-xs {
+    margin-bottom: 45px; }
+  
+  .margin-top-150 {
+    margin-top: 150px; }
+  
+  .margin-top-80 {
+    margin-top: 80px; }
+  
+  .margin-top-40 {
+    margin-top: 40px; }
+  
+  .margin-bottom-80 {
+    margin-bottom: 80px; }
+  
+  .margin-top-20 {
+    margin-top: 20px; }
+  
+  .float-left {
+    float: left; }
+  
+  .float-right {
+    float: right; }
+  
+  .opacity-hide {
+    opacity: 0;
+    visibility: hidden; }
+  
+  .center-div {
+    margin: 0 auto;
+    overflow: visible;
+    float: none;
+    clear: both; }
+  
+  .preloader-it {
+    background: #fff;
+    position: fixed;
+    z-index: 110;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important; }
+  
+  /* Effect 1: YouTube loading */
+  .la-anim-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 5px;
+    background: #141414;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    pointer-events: none; }
+  
+  .la-anim-1::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: #141414;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, box-shadow 2s 4s;
+    transition: opacity 0.2s, box-shadow 2s 4s;
+    -webkit-transform: rotate(2deg) translateY(-2px);
+    transform: rotate(2deg) translateY(-2px); }
+  
+  .la-anim-1.la-animate {
+    z-index: 100;
+    opacity: 1;
+    -webkit-transition: -webkit-transform 5s ease-in, opacity 1s 5s;
+    transition: transform 5s ease-in, opacity 1s 5s;
+    -webkit-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0); }
+  
+  .la-anim-1.la-animate::after {
+    opacity: 1; }
+  
+  .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite; }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1; }
+    50% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 1; }
+    50% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-moz-keyframes blink {
+    0% {
+      opacity: 1; }
+    50% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-webkit-keyframes back_ken {
+    0% {
+      -webkit-transform: scale(1); }
+    50% {
+      -webkit-transform: scale(1.2); }
+    100% {
+      -webkit-transform: scale(1); } }
+  @-moz-keyframes back_ken {
+    0% {
+      -moz-transform: scale(1); }
+    50% {
+      -moz-transform: scale(1.2); }
+    100% {
+      -moz-transform: scale(1); } }
+  @-o-keyframes back_ken {
+    0% {
+      -o-transform: scale(1); }
+    50% {
+      -o-transform: scale(1.2); }
+    100% {
+      -o-transform: scale(1); } }
+  @keyframes back_ken {
+    0% {
+      transform: scale(1); }
+    50% {
+      transform: scale(1.2); }
+    100% {
+      transform: scale(1); } }
+
+      
+
+
+
+      

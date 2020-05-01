@@ -1,0 +1,33 @@
+.person-img {
+    display: none;
+    height: 150px;
+    width: 150px;
+    background: url(../../assets/img/profile.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.DP {
+    display: inline-block;
+    position: absolute;
+    top:-20%;
+    left:10%;
+    height: 600px;
+    width: 100%;
+    background: url(../../assets/img/DP.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    -webkit-filter: drop-shadow(-50px 25px 5px #000);
+    filter: drop-shadow(-50px 25px 5px #000);
+}
+    
+@media only screen and (max-width: 900px){
+    
+    .DP{
+       display: none;
+    }
+
+    .person-img{
+        display: block;
+    }
+}

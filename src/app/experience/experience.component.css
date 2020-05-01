@@ -1,0 +1,71 @@
+.row.exp-timeline{
+  margin-top: 50px;
+  cursor: context-menu;
+  transition-timing-function: ease-out;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.exp-timeline .row.text{
+  opacity: .6;
+  transition: transform .2s;
+}
+
+.row.exp-timeline:hover .row.text{
+  opacity: 1;
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
+
+
+.row.exp-timeline .timeline-bullet:after {
+  border: 3px solid #8a8a8a;;
+  border-radius: 50%;
+  content: "";
+  height: 15px;
+  left: 15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+ }
+
+
+ .row.exp-timeline:hover .timeline-bullet:after {
+  border: 4px solid #e91e63;
+  height: 18px;
+  width: 18px;
+  left: 13px;
+ }
+
+
+
+.duration span {
+  color: #fff;
+  font-family: "Hind", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px; }
+.job-desn, .experience-wrap .job-loc {
+  display: block; }
+.job-desn {
+  color: #ccc;
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  text-transform: capitalize; }
+.job-loc {
+  color: #fff;
+  font-family: "Hind", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  text-transform: capitalize; }
+
+  @media only screen and (max-width: 770px) {
+    .timeline-bullet:after{
+      display: none;
+    }
+  }

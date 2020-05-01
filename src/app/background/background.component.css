@@ -1,0 +1,29 @@
+.fixed-bg {
+    background: transparent url("../../assets/img/bg.png") no-repeat; /* <<== Backgroung Image*/
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; }
+  
+.fixed-bg-overlay {
+    background: rgba(255, 255, 255, 0);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    position: fixed;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; }

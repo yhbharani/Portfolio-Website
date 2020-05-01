@@ -1,0 +1,74 @@
+
+<!-- The Modal -->
+<div class="modal">
+
+    <!-- Modal content -->
+    
+    <div class="modal-content">
+       <!-- <div class="modal-header" ></div> -->
+        
+        <div class="content">
+
+            <div [ngSwitch]="index">
+
+                <div *ngSwitchCase="1">
+                    <app-griha></app-griha>
+                </div>
+
+                <div *ngSwitchCase="2">
+                    <app-kharsali></app-kharsali>
+                </div>
+
+                <div *ngSwitchCase="3">
+                    <app-nasa-font></app-nasa-font>
+                </div>
+
+                <div *ngSwitchCase="4">
+                    <app-apartment></app-apartment>
+                </div>
+
+                <div *ngSwitchCase="5">
+                    <app-plastic></app-plastic>
+                </div>
+
+                <div *ngSwitchCase="6">
+                    <app-spa></app-spa>
+                </div>
+
+                <div *ngSwitchCase="7">
+                    <app-aqua></app-aqua>
+                </div>
+
+                <div *ngSwitchCase="8">
+                    <app-dice></app-dice>
+                </div>
+
+                <div *ngSwitchCase="9">
+                    <app-landscape></app-landscape>
+                </div>
+
+                <div *ngSwitchCase="10">
+                    <app-destech></app-destech>
+                </div>
+                
+                <div *ngSwitchDefault>Project Not Found</div>
+            </div>
+            
+        </div>
+
+        <!--<div class="modal-footer"></div>-->
+    </div>
+
+    <a class="clos" routerLink=""><mat-icon class="bandh">close</mat-icon></a>
+
+    <div *ngIf="index<10"> <!-- <<== Change Max No. of Projects !!-->
+        <a class="next "[routerLink]="['/project', index+1]"><mat-icon >keyboard_arrow_right</mat-icon></a>
+    </div>
+    <div *ngIf="index>1">
+        <a class="previous" [routerLink]="['/project', index-1]"><mat-icon >keyboard_arrow_left</mat-icon></a>
+    </div>
+    
+    
+    
+
+</div>

@@ -1,0 +1,66 @@
+<!--Fixed Bg Image-->
+<app-background></app-background>
+<!--/Fixed Bg Image-->
+<div class="container-fluid"> <!-- Container -->
+  <div class="row"> <!-- Row -->
+
+    <div class="col-lg-8 col-xs-12 pad-zero" id="top">
+      
+      <app-header></app-header>
+
+
+      <div id="main_content" class="content-block margin-top-150 margin-top-sm-70 margin-top-xs-50">
+        
+        <app-intro ></app-intro>
+        
+        <hr class="separater-hr"/>
+        
+        <app-iam></app-iam>
+        
+        <hr class="separater-hr"/>
+        
+        <app-skill></app-skill>
+
+        <hr class="separater-hr"/> 
+        
+        <app-work></app-work>
+        <router-outlet></router-outlet>
+
+        <hr class="separater-hr"/> 
+        
+        <app-education></app-education>
+
+        <hr class="separater-hr"/> 
+        
+        <app-experience></app-experience>
+
+        <hr class="separater-hr"/>
+        
+        <div class="bg-achive">
+        <app-achievment></app-achievment>
+        </div>
+
+        <hr class="separater-hr"/>
+
+        <app-artwork></app-artwork>
+
+        <hr class="separater-hr"/>
+
+        <app-contact></app-contact>
+
+        <hr class="separater-hr"/> 
+
+        <app-footer></app-footer>
+        
+      </div>
+
+    </div>
+
+    <div id="vertical_nav_wrap" class="col-lg-4 col-xs-12 pad-zero vertical-nav-wrap">
+      <app-navigation></app-navigation>
+    </div>
+
+
+  </div>  <!-- /Row -->
+</div> <!-- /Container -->
+

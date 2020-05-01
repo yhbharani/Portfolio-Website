@@ -1,0 +1,36 @@
+
+
+.achivement-list-wrap li ul {
+    float: left;
+    width: 100%; }
+    .achivement-list-wrap li ul li {
+      font-size: 14px;
+      color: #fff;
+      font-family: "Hind", sans-serif;
+      font-weight: 500;
+      text-transform: capitalize;
+      float: left;
+      width: 100%; }
+  .achivement-list-wrap .dash-pointer {
+    display: inline-block;
+    margin-right: 30px;
+     }
+  .achivement-list-wrap .achive-pts {
+    display: inline-block;
+    width: 70%;
+    word-spacing: 0.2em;
+    margin-left: 5%;
+    font-weight: 500;
+    font-size: 14px;
+    opacity: .8;
+  }
+  .achivement-list-wrap .achive-pts strong {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  mat-icon {
+      vertical-align: top;
+  }
+
+

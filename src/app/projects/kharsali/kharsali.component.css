@@ -1,0 +1,43 @@
+.starter{
+    padding: .4%;
+    padding-left:2% ;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.ender{
+  padding: 4%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.date{
+  text-align: center;
+  font-size: .5em;
+  opacity: .5;
+}
+
+
+img{
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.video{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media only screen and (max-width: 800px){
+  .video iframe{
+    width: 360px;
+    height: 180px;
+    text-align: center;    
+  }
+.video{
+text-align: center;
+}
+
+}

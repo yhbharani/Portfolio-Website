@@ -1,0 +1,97 @@
+<section id="contact"  class="col-lg-10 col-md-11 col-sm-11 center-div contact-wrap sec-pad">
+    <h6>contact</h6>
+    <div class="align-center" >
+        <h3>Hello {{name}},<br> I'd love to hear from you.</h3>
+        <div>
+            <form class="row form-horizontal" (ngSubmit)="processForm()" #ContactForm="ngForm" >
+                <div class="form-group input--hoshi col-sm-6" >
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Name</mat-label>
+                        <input matInput 
+                        type="text" 
+                        name="name" 
+                        [(ngModel)]="name"
+                        placeholder="Name">
+                    </mat-form-field>  
+                </div>
+                <div class="form-group  input--hoshi col-sm-6" >
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Email</mat-label>
+                        <input matInput
+                        type="email"
+                        name="email"
+                        [(ngModel)]="email" 
+                        placeholder="Email">
+                    </mat-form-field> 
+                </div>
+                <div class="form-group  input--hoshi col-sm-6" >
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Phone</mat-label>
+                        <input matInput
+                        type="tel"
+                        name="phone"
+                        [(ngModel)]="phone" 
+                        placeholder="Phone">
+                    </mat-form-field> 
+                </div>
+                <div class="form-group  input--hoshi col-sm-12">
+                    <mat-form-field class="full-width">
+                        <mat-label>Message</mat-label>
+                        <textarea 
+                        matInput rows="4"
+                        type="text" 
+                        name="message" 
+                        [(ngModel)]="message"></textarea>
+                    </mat-form-field> 
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="align-center">
+                        <button type="submit" class="btn btn-default" [disabled]="!ContactForm.valid">
+                          <span class="mask"></span>
+                          <span>send message</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <h3 style="margin-top: 50px;">I am <br> Available on,</h3>
+
+        <div class="row" style="height: 200px;  width:80%;">
+            <ul>
+              <li class="facebook">
+                <a href="https://www.facebook.com/profile.php?id=100019033962882" target="_blank"><i class="fa fa-facebook-f icon"></i></a>
+              </li>
+              <li class="instagram">
+                <a href="https://www.instagram.com/yash.bharani/" target="_blank"><i class="fa fa-instagram icon"></i></a>
+              </li>
+              <li class="youtube">
+                <a href="https://www.youtube.com/channel/UCkm9PlSI7T3fxCdGMuz2HFg" target="_blank"><i class="fa fa-youtube icon"></i></a>
+              </li>
+              <li class="behance">
+                <a href="https://www.behance.net/yashhbhara7006" target="_blank"><i class="fa fa-behance icon"></i></a>
+              </li>
+              <li class="pinterest">
+                <a href="https://in.pinterest.com/yashhbharani" target="_blank"><i class="fa fa-pinterest icon"></i></a>
+              </li>
+              <li class="github">
+                <a href="https://github.com/yhbharani" target="_blank"><i class="fa fa-github icon"></i></a>
+              </li>
+              <li class="linkedin">
+                <a href="https://www.linkedin.com/in/yash-h-bharani-7a249816a/" target="_blank"><i class="fa fa-linkedin icon"></i></a>
+              </li>
+            </ul>
+    
+        </div>   
+
+
+        <div class="email-direct">
+            <p>Email me at <a href="mailto:yash.h.bharani@gmail.com">yash.h.bharani@gmail.com</a></p>
+        </div>
+
+        
+
+    </div>
+</section>
+
+

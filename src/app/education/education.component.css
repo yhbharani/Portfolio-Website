@@ -1,0 +1,70 @@
+
+
+.edu-div
+{
+margin: 0 auto;
+overflow: hidden;
+float: none;
+clear: both;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
+.qualfication-wrap {
+  margin-top: 42px; }
+
+.qualfication-wrap .qualfication:nth-child(even) {
+    background: rgba(255, 255, 255, 0.04); }
+
+.qualfication {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  float: left;
+  padding: 30px 0;
+  width: 100%; }
+
+.qualfication.first-row {
+  width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+.qualfication .row-count {
+    height: 35px;
+    width: 35px;
+    display: table;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: "Hind", sans-serif;
+    font-size: 11px;
+    font-weight: 600; }
+
+.qualfication .row-count span {
+      display: table-cell;
+      vertical-align: middle; }
+
+.qualfication .yr-pers {
+    color: #fff;
+    font-family: "Hind", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px; }
+
+.qualfication .insti {
+    color: #fff;
+    font-family: "Hind", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize; }
+
+.qualfication .design {
+    color: #ccc;
+    font-family: "Hind", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize; }
+    
+.vertical-align-pad {
+  padding-top: 10px;
+  display: block; }
