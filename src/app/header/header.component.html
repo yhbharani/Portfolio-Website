@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <div *ngIf="drop" class="drop" @pull>
+    <div *ngIf="drop" class="drop" @pull (clickOutside)="toggle();">
         <ul (click)="toggle();">
             <li class="item"><a  href="#top" class="nav-link scroll"><button mat-button color="accent">About</button></a></li>
             <li class="item"><a  href="#skill" class="nav-link scroll"><button mat-button color="accent">Skills</button></a></li>

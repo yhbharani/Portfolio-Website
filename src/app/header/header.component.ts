@@ -7,6 +7,7 @@ import {
   transition,
 } from '@angular/animations';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -29,8 +30,9 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
+    
+
 
   toggle(){
     this.drop=!this.drop;
