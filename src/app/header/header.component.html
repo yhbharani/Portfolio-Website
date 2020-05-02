@@ -1,5 +1,5 @@
 
-<header>
+<header (clickOutside)="onClickOutside();">
    
     <div class="header-wrap col-lg-10 center-div">
         <div class="float-left name">
@@ -20,8 +20,8 @@
         </div>
     </div>
 
-    <div *ngIf="drop" class="drop" @pull (clickOutside)="toggle();">
-        <ul (click)="toggle();">
+    <div *ngIf="drop" class="drop" @pull >
+        <ul (click)="toggle();" >
             <li class="item"><a  href="#top" class="nav-link scroll"><button mat-button color="accent">About</button></a></li>
             <li class="item"><a  href="#skill" class="nav-link scroll"><button mat-button color="accent">Skills</button></a></li>
             <li class="item"><a  href="#work" class="nav-link scroll"><button mat-button color="accent">Portfolio</button></a></li>

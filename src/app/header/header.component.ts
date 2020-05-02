@@ -38,4 +38,10 @@ export class HeaderComponent implements OnInit {
     this.drop=!this.drop;
   }
 
+  onClickOutside(){
+    if(this.drop){
+      this.drop=!this.drop;
+    }
+  }
+
 }

@@ -10,6 +10,8 @@ import { NgModule, Component } from '@angular/core';
 
 import { RouterModule } from '@angular/router';
 
+import { ClickOutsideModule } from 'ng-click-outside';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackgroundComponent } from './background/background.component';
@@ -85,6 +87,7 @@ import { DestechComponent } from './projects/destech/destech.component';
     MatInputModule,
     AppRoutingModule,
     NgxGalleryModule,
+    ClickOutsideModule,
     RouterModule.forRoot([
       {
         path: '', 
