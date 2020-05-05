@@ -3,16 +3,19 @@
     <div class="align-center" >
         <h3>Hello {{Name}},<br> I'd love to hear from you.</h3>
         <div>
-            <form class="row form-horizontal"
-            ngForm name="ContactForm"
-            #ContactForm="ngForm" >
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"></iframe>
+            <form ngNoForm class="row form-horizontal"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSemFWK3OntGH4Q6Tsb3_vlPoYTzfVhNeuElf-lv9tpBJpZ4KA/formResponse" 
+            method="POST"
+            target="hidden_iframe"
+            onsubmit="window.location.reload()">
                 <div class="form-group input--hoshi col-sm-6" >
                     <mat-form-field class="example-full-width">
                         <mat-label>Name</mat-label>
                         <input matInput
                         required 
                         type="text" 
-                        ngModel name="name"
+                        name="entry.613761435"
                         #name = "ngModel" 
                         [(ngModel)]="Name"
                         placeholder="Name">
@@ -28,7 +31,7 @@
                         required
                         email
                         type="email"
-                        ngModel name="email"
+                        name="entry.414006184"
                         #email = "ngModel"
                         [(ngModel)]="Email" 
                         matInput placeholder="Email">
@@ -43,7 +46,7 @@
                         <mat-label>Phone</mat-label>
                         <input matInput
                         type="tel"
-                        name="phone"
+                        name="entry.724865370"
                         [(ngModel)]="phone" 
                         placeholder="Phone">
                     </mat-form-field> 
@@ -55,7 +58,7 @@
                         matInput rows="4"
                         required
                         type="text" 
-                        ngModel name="message" 
+                        name="entry.929714539" 
                         #message="ngModel"
                         [(ngModel)]="Message"></textarea>
                         <mat-error *ngIf="message.touched && !message.valid">
@@ -63,21 +66,28 @@
                         </mat-error>
                     </mat-form-field> 
                 </div>
+                <div class="form-group col-sm-12">    
+
+                  <ng-template [ngIf]="name.valid && email.valid && message.valid" [ngIfElse]="notValid">
+                    <div class="align-center">
+                      <button type="submit" class="btn btn-default" id="sub" (click)="processForm()">
+                        <span class="mask"></span>
+                        <span>send message</span>
+                      </button>
+                    </div>
+                  </ng-template>
+                  
+                  <ng-template #notValid>
+                    <div class="align-center">
+                      <button class="btn btn-default" id="sub" (click)="notAvbl()">
+                        <span class="mask"></span>
+                        <span>send message</span>
+                      </button>
+                    </div>
+                  </ng-template>
+                
+                </div>
             </form>
-            <div class="form-group col-sm-12">
-              <div class="align-center" *ngIf="ContactForm.valid">
-                  <button type="submit" class="btn btn-default" (click)="processForm()">
-                    <span class="mask"></span>
-                    <span>send message</span>
-                  </button>
-              </div>
-              <div class="align-center" *ngIf="!ContactForm.valid">
-                <button type="submit" class="btn btn-default" (click)="notValid()">
-                  <span class="mask"></span>
-                  <span>send message</span>
-                </button>
-              </div>
-            </div>
         </div>
 
         <h3 style="margin-top: 50px;">I am <br> Available on,</h3>
@@ -114,9 +124,9 @@
             <p>Email me at <a href="mailto:yash.h.bharani@gmail.com">yash.h.bharani@gmail.com</a></p>
         </div>
 
-        
-
     </div>
+
 </section>
+
 
 
