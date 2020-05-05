@@ -1,27 +1,41 @@
 <section id="contact"  class="col-lg-10 col-md-11 col-sm-11 center-div contact-wrap sec-pad">
     <h6>contact</h6>
     <div class="align-center" >
-        <h3>Hello {{name}},<br> I'd love to hear from you.</h3>
+        <h3>Hello {{Name}},<br> I'd love to hear from you.</h3>
         <div>
-            <form class="row form-horizontal" (ngSubmit)="processForm()" #ContactForm="ngForm" >
+            <form class="row form-horizontal"
+            ngForm name="ContactForm"
+            #ContactForm="ngForm" >
                 <div class="form-group input--hoshi col-sm-6" >
                     <mat-form-field class="example-full-width">
                         <mat-label>Name</mat-label>
-                        <input matInput 
+                        <input matInput
+                        required 
                         type="text" 
-                        name="name" 
-                        [(ngModel)]="name"
+                        ngModel name="name"
+                        #name = "ngModel" 
+                        [(ngModel)]="Name"
                         placeholder="Name">
+                        <mat-error *ngIf="name.touched && !name.valid">
+                          <div *ngIf="name.errors.required"> Required </div>
+                        </mat-error>
                     </mat-form-field>  
                 </div>
                 <div class="form-group  input--hoshi col-sm-6" >
                     <mat-form-field class="example-full-width">
                         <mat-label>Email</mat-label>
-                        <input matInput
+                        <input 
+                        required
+                        email
                         type="email"
-                        name="email"
-                        [(ngModel)]="email" 
-                        placeholder="Email">
+                        ngModel name="email"
+                        #email = "ngModel"
+                        [(ngModel)]="Email" 
+                        matInput placeholder="Email">
+                        <mat-error *ngIf="email.touched && !email.valid">
+                          <div *ngIf="email.errors.required"> Required </div>
+                          <div *nfIf="email.errors.email">Invalid</div>
+                        </mat-error>
                     </mat-form-field> 
                 </div>
                 <div class="form-group  input--hoshi col-sm-6" >
@@ -39,20 +53,31 @@
                         <mat-label>Message</mat-label>
                         <textarea 
                         matInput rows="4"
+                        required
                         type="text" 
-                        name="message" 
-                        [(ngModel)]="message"></textarea>
+                        ngModel name="message" 
+                        #message="ngModel"
+                        [(ngModel)]="Message"></textarea>
+                        <mat-error *ngIf="message.touched && !message.valid">
+                          <div *ngIf="message.errors.required"> Required </div>
+                        </mat-error>
                     </mat-form-field> 
                 </div>
-                <div class="form-group col-sm-12">
-                    <div class="align-center">
-                        <button type="submit" class="btn btn-default" [disabled]="!ContactForm.valid">
-                          <span class="mask"></span>
-                          <span>send message</span>
-                        </button>
-                    </div>
-                </div>
             </form>
+            <div class="form-group col-sm-12">
+              <div class="align-center" *ngIf="ContactForm.valid">
+                  <button type="submit" class="btn btn-default" (click)="processForm()">
+                    <span class="mask"></span>
+                    <span>send message</span>
+                  </button>
+              </div>
+              <div class="align-center" *ngIf="!ContactForm.valid">
+                <button type="submit" class="btn btn-default" (click)="notValid()">
+                  <span class="mask"></span>
+                  <span>send message</span>
+                </button>
+              </div>
+            </div>
         </div>
 
         <h3 style="margin-top: 50px;">I am <br> Available on,</h3>
