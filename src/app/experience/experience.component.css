@@ -7,7 +7,7 @@
 }
 
 .row.exp-timeline .row.text{
-  opacity: .6;
+  opacity: .75;
   transition: transform .2s;
 }
 
@@ -52,15 +52,15 @@
 .job-desn {
   color: #ccc;
   font-family: "Hind", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   padding-bottom: 5px;
   text-transform: capitalize; }
 .job-loc {
-  color: #fff;
+  color: #e91e63;
   font-family: "Hind", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 800;
   padding-bottom: 15px;
   text-transform: capitalize; }
 

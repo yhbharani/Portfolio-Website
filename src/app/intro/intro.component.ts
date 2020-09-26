@@ -33,7 +33,6 @@ export class IntroComponent implements OnInit {
         '& I am: <span style="color: #e91e63"> A </span> UI/UX Designer',
         '& I am: <span style="color: #e91e63"> A </span> Web Designer',
         '& I am: <span style="color: #e91e63"> A </span> Web Developer',
-        '& I am: <span style="color: #e91e63"> A </span> Confused Person?',
         '& I am: <span style="color: #e91e63"> An </span> Artist.' ,
       ],
       typeSpeed: 120,
