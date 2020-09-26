@@ -43,6 +43,7 @@ import { NgxGalleryModule } from 'ngx-gallery-9';
 import { LandscapeComponent } from './projects/landscape/landscape.component';
 import { DigitalComponent } from './artwork/digital/digital.component';
 import { DestechComponent } from './projects/destech/destech.component';
+import { HospitalComponent } from './projects/hospital/hospital.component';
 
 
 
@@ -75,7 +76,8 @@ import { DestechComponent } from './projects/destech/destech.component';
     ArtworkComponent,
     LandscapeComponent,
     DigitalComponent,
-    DestechComponent
+    DestechComponent,
+    HospitalComponent
   ],
   imports: [
     BrowserModule,
