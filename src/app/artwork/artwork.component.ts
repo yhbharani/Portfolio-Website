@@ -16,8 +16,8 @@ export class ArtworkComponent implements OnInit {
 
     this.galleryOptions = [
       {
-          width: '600px',
-          height: '400px',
+          width: '100%',
+          height: '800px',
           thumbnailsColumns: 4,
           imageAnimation: NgxGalleryAnimation.Slide
       },

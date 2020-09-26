@@ -13,7 +13,7 @@
     top:-17%;
     left:-17%;
     height: 60%;
-    width: 60%;
+    width: 600px;
     background: url(../../assets/img/photu.png);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -26,6 +26,19 @@
     position: relative;
     margin-left: 35%;
     z-index: 100;
+}
+@media only screen and (max-width: 1200px){
+    
+    .DP{
+        height: 65%;
+        width: 100%;
+        left:-42%;
+    }
+
+    .hello{
+        position: relative;
+        margin-left: 25%;
+        z-index: 100;}
 }
 @media only screen and (max-width: 900px){
     
