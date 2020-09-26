@@ -10,17 +10,23 @@
 .DP {
     display: inline-block;
     position: absolute;
-    top:-20%;
-    left:10%;
-    height: 600px;
+    top:-17%;
+    left:-15%;
+    height: 100%;
     width: 100%;
-    background: url(../../assets/img/DP.png);
+    background: url(../../assets/img/photu.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: 60%; 
     -webkit-filter: drop-shadow(-50px 25px 5px #000);
     filter: drop-shadow(-50px 25px 5px #000);
+    z-index: 0;
 }
     
+.hello{
+    position: relative;
+    margin-left: 32%;
+    z-index: 100;
+}
 @media only screen and (max-width: 900px){
     
     .DP{
