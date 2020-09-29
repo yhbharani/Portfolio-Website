@@ -1,5 +1,5 @@
 .content-block {
-    background: #161616;
+    background-image: linear-gradient(to right, #1c0525,#16051d , #080708);
     border-top-left-radius: 10px;
     -moz-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
     -o-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;

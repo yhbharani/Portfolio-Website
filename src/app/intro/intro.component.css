@@ -10,27 +10,29 @@
 .DP {
     display: inline-block;
     position: absolute;
-    top:-17%;
-    left:-17%;
-    height: 60%;
+    top:-30%;
+    left:-15%;
+    height: 75%;
     width: 600px;
-    background: url(../../assets/img/photu.png);
+    background: url(../../assets/img/phottu.png);
     background-repeat: no-repeat;
     background-size: cover; 
-    -webkit-filter: drop-shadow(-50px 25px 5px #000);
-    filter: drop-shadow(-50px 25px 5px #000);
+
+    -webkit-filter: drop-shadow(-50px 25px 4px #000);
+    filter: drop-shadow(-50px 25px 4px #000);
+
     z-index: 0;
 }
     
 .hello{
     position: relative;
-    margin-left: 35%;
+    margin-left: 38%;
     z-index: 100;
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1100px){
     
     .DP{
-        height: 65%;
+        height: 75%;
         width: 100%;
         left:-42%;
     }
