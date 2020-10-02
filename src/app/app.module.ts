@@ -46,6 +46,8 @@ import { DestechComponent } from './projects/destech/destech.component';
 import { HospitalComponent } from './projects/hospital/hospital.component';
 import { CogniBetaComponent } from './projects/cogni-beta/cogni-beta.component';
 import { HologramComponent } from './projects/hologram/hologram.component';
+import { NounComponent } from './intro/noun/noun.component';
+import { VerbComponent } from './intro/verb/verb.component';
 
 
 
@@ -81,7 +83,9 @@ import { HologramComponent } from './projects/hologram/hologram.component';
     DestechComponent,
     HospitalComponent,
     CogniBetaComponent,
-    HologramComponent
+    HologramComponent,
+    NounComponent,
+    VerbComponent
   ],
   imports: [
     BrowserModule,
