@@ -23,6 +23,10 @@
 
     z-index: 0;
 }
+
+.hi{
+    font-size: inherit;
+ }
     
 .hello{
     position: relative;
@@ -105,7 +109,7 @@
         font-size: 45px;
     }
 
-    h1{
+    .hi{
         font-size: 25px;
     }
 
