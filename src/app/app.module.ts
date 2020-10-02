@@ -44,6 +44,8 @@ import { LandscapeComponent } from './projects/landscape/landscape.component';
 import { DigitalComponent } from './artwork/digital/digital.component';
 import { DestechComponent } from './projects/destech/destech.component';
 import { HospitalComponent } from './projects/hospital/hospital.component';
+import { CogniBetaComponent } from './projects/cogni-beta/cogni-beta.component';
+import { HologramComponent } from './projects/hologram/hologram.component';
 
 
 
@@ -77,7 +79,9 @@ import { HospitalComponent } from './projects/hospital/hospital.component';
     LandscapeComponent,
     DigitalComponent,
     DestechComponent,
-    HospitalComponent
+    HospitalComponent,
+    CogniBetaComponent,
+    HologramComponent
   ],
   imports: [
     BrowserModule,

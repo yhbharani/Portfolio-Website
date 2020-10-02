@@ -28,30 +28,38 @@
                 </div>
 
                 <div *ngSwitchCase="5">
-                    <app-apartment></app-apartment>
+                    <app-cogni-beta></app-cogni-beta>
                 </div>
 
                 <div *ngSwitchCase="6">
-                    <app-plastic></app-plastic>
+                    <app-apartment></app-apartment>
                 </div>
 
                 <div *ngSwitchCase="7">
-                    <app-spa></app-spa>
+                    <app-plastic></app-plastic>
                 </div>
 
                 <div *ngSwitchCase="8">
-                    <app-aqua></app-aqua>
+                    <app-spa></app-spa>
                 </div>
 
                 <div *ngSwitchCase="9">
-                    <app-dice></app-dice>
+                    <app-aqua></app-aqua>
                 </div>
 
                 <div *ngSwitchCase="10">
-                    <app-landscape></app-landscape>
+                    <app-dice></app-dice>
                 </div>
 
                 <div *ngSwitchCase="11">
+                    <app-landscape></app-landscape>
+                </div>
+
+                <div *ngSwitchCase="12">
+                    <app-hologram></app-hologram>
+                </div>
+
+                <div *ngSwitchCase="13">
                     <app-destech></app-destech>
                 </div>
                 
@@ -65,7 +73,7 @@
 
     <a class="clos" routerLink=""><mat-icon class="bandh">close</mat-icon></a>
 
-    <div *ngIf="index<1"> <!-- <<== Change Max No. of Projects !!-->
+    <div *ngIf="index<13"> <!-- <<== Change Max No. of Projects !!-->
         <a class="next "[routerLink]="['/project', index+1]"><mat-icon >keyboard_arrow_right</mat-icon></a>
     </div>
     <div *ngIf="index>1">
