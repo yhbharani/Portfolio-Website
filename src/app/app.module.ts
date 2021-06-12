@@ -48,6 +48,7 @@ import { CogniBetaComponent } from './projects/cogni-beta/cogni-beta.component';
 import { HologramComponent } from './projects/hologram/hologram.component';
 import { NounComponent } from './intro/noun/noun.component';
 import { VerbComponent } from './intro/verb/verb.component';
+import { PetpoojaComponent } from './projects/petpooja/petpooja.component';
 
 
 
@@ -85,7 +86,8 @@ import { VerbComponent } from './intro/verb/verb.component';
     CogniBetaComponent,
     HologramComponent,
     NounComponent,
-    VerbComponent
+    VerbComponent,
+    PetpoojaComponent
   ],
   imports: [
     BrowserModule,
